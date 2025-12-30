@@ -263,7 +263,7 @@ def create_demo_interface(demo: VoxCPMDemo):
     return interface
 
 
-def run_demo(server_name: str = "localhost", server_port: int = 7860, show_error: bool = True):
+def run_demo(server_name: str = "0.0.0.0", server_port: int = 7860, show_error: bool = True):
     demo = VoxCPMDemo()
     interface = create_demo_interface(demo)
     # Recommended to enable queue on Spaces for better throughput
